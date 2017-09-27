@@ -100,8 +100,56 @@ or
 
 
 ## Suzerain
+
 Now to the point of all this - you now have 2 microservices running API's and you 
 want a "user journey" to stitch it all together and make sure things really work.
 
+This project is the "Kotlin + Rest Assured for RESTful microservices testing" part 
+of all this.
 
+ALL of these tests use HTTP + REST to do their job.
+
+To run all the tests, just
+```commandline
+cd suzerain
+gradle test
+```
+
+You should see something like:
+
+```
+> Task :test
+
+app.journeys.EntireEscapadeJourney > Feature: Food service visit.Scenario: Should give us the food we ask for, like we asked for it, in under a minute PASSED
+
+app.journeys.FoodServiceJourney > Feature: Food service visit.Scenario: Should give us the food we ask for, like we asked for it, in under a minute PASSED
+
+app.journeys.GetCarReadyJourney > Feature: the car.Scenario: when new should not be ready PASSED
+
+app.journeys.GetCarReadyJourney > Feature: the car.Scenario: and should be ready after I do all the things PASSED
+
+app.tests.CarTests > CarTests.get(/cars): Call the car list and get 200 PASSED
+
+app.tests.CarTests > CarTests.put(/cars) and id back PASSED
+
+app.tests.CarTests > CarTests.get(/ready) should not be true for a new car with no calls to seat/wheels/engine PASSED
+
+app.tests.FoodServiceTests > FoodServiceTests.get(/order): Order the food PASSED
+
+app.tests.FoodServiceTests > FoodServiceTests.get(/window) Get food at window PASSED
+
+FeatureSpecTest > Feature: the thingy bob.Scenario: should explode when I touch it PASSED
+
+FeatureSpecTest > Feature: the thingy bob.Scenario: and should do this when I wibble it PASSED
+
+KotlinTestExamplesTest > When calculating the sum of 2 and 2.Then it should return 4 PASSED
+
+KotlinTestExamplesTest > When calculating the multiplication of 2 and 2.Then implement multiplication! PASSED
+
+KotlinTestExamplesTest > When using faker.Then timezone PASSED
+
+
+BUILD SUCCESSFUL in 8s
+3 actionable tasks: 3 executed
+```
 
