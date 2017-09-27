@@ -13,9 +13,9 @@ import io.restassured.path.json.JsonPath
 
 class EntireEscapadeJourney : FeatureSpec() {
     init {
-        feature("Food service visit") {
+        feature("Get in the car, prepare the car, and go get food") {
 
-            scenario("Should give us the food we ask for, like we asked for it, in under a minute") {
+            scenario("Should get in the car & makeit ready, go to drivethrough, which should give us the food we ask for, like we asked for it, in under a minute") {
 
                 val carId = CarServiceFunctions.putCar("AMC", "Gremlin")
                 carId shouldBe gt(0)
