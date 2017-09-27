@@ -1,0 +1,38 @@
+buildscript {
+    ext.kotlin_version = "1.1.4"
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: 'maven'
+apply plugin: 'kotlin'
+
+group 'com.revelfire'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+mainClassName = 'app.ServiceKt'
+
+dependencies {
+    compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: "$kotlin_version"
+    compile group: 'com.sparkjava', name: 'spark-core', version: '2.5.4'
+    compile group: 'io.fastjson', name: 'boon', version: '0.33'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+}
+

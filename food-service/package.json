@@ -1,0 +1,18 @@
+{
+  "name": "food-service",
+  "version": "0.1.1",
+  "description": "Delivering burgers all day and all night",
+  "author": "Chris Mathias",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "config": "^1.26.1",
+    "promise": "^8.0.1",
+    "express": "^4.15.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "gulp": "^3.9.1",
+    "mocha": "^2.2.1"
+  }
+}
