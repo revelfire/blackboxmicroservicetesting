@@ -20,8 +20,13 @@ gradle build
 ```
 
 ### Run
+
+If you are running in an IDE just run/debug the Service file main method.
+
+You can also build and run at command line using the gradle application plugin.
+
 ```commandline
-java -jar 
+gradle install installDist
 ```
 
 ### Test
@@ -46,7 +51,7 @@ The whole conversation to create and start the car looks like this:
 
 `curl localhost:8080/api/cars`
 ```json
-{"451711177":{"car":{"make":"BMW","model":"X3"},"wheels":{},"engine":{},"seatBelt":{}}}
+[{"car":{"make":"BMW","model":"X3"},"wheels":{"lugsTight":false},"engine":{"running":false},"seatBelt":{"on":false}}]
 ```
 
 `curl localhost:8080/api/cars/451711177/ready`

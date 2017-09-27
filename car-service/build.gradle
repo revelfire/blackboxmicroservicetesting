@@ -31,7 +31,7 @@ mainClassName = 'app.ServiceKt'
 dependencies {
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: "$kotlin_version"
     compile group: 'com.sparkjava', name: 'spark-core', version: '2.5.4'
-    compile group: 'io.fastjson', name: 'boon', version: '0.33'
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.9.0'
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 
 }

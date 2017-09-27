@@ -1,11 +1,13 @@
 package app
 
-import org.boon.json.JsonFactory
+import com.fasterxml.jackson.core.JsonFactory
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.KotlinModule
 import spark.Spark.*
 import java.util.*
 
 
-var mapper = JsonFactory.create()
+var mapper = ObjectMapper().registerModule(KotlinModule())
 val cars = mutableMapOf<Int, CarState>()
 
 fun main(args: Array<String>) {
@@ -13,7 +15,7 @@ fun main(args: Array<String>) {
     path("/api") {
 
         get("/cars") { req, res ->
-            mapper.writeValueAsString(cars)
+            mapper.writeValueAsString(cars.values)
         }
 
         get("/cars/:carId/ready") { req, res ->
@@ -55,7 +57,7 @@ fun main(args: Array<String>) {
             res.status(201)
             """
                 {
-                    "carId:" $carId
+                    "carId": $carId
                 }
             """
         }
