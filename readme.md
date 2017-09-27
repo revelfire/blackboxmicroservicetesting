@@ -27,7 +27,9 @@ You can also build and run at command line using the gradle application plugin.
 
 ```commandline
 gradle install installDist
+./build/install/car-service/bin/car-service
 ```
+- service is now up and running, listening on 8080
 
 ### Test
 ```commandline
