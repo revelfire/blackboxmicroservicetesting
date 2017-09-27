@@ -122,7 +122,7 @@ You should see something like:
 ```
 > Task :test
 
-app.journeys.EntireEscapadeJourney > Feature: Food service visit.Scenario: Should give us the food we ask for, like we asked for it, in under a minute PASSED
+app.journeys.EntireEscapadeJourney > Feature: Get in the car, prepare the car, and go get food.Scenario: Should get in the car & makeit ready, go to drivethrough, which should give us the food we ask for, like we asked for it, in under a minute PASSED
 
 app.journeys.FoodServiceJourney > Feature: Food service visit.Scenario: Should give us the food we ask for, like we asked for it, in under a minute PASSED
 
