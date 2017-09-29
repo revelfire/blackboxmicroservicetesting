@@ -1,8 +1,8 @@
 package app.tests
 
+import app.Integration
 import app.functions.FoodServiceFunctions
-import com.raken.test.api.Integration
-import com.raken.test.api.util.objectMapperFactory
+import app.util.objectMapperFactory
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.matchers.shouldNotBe
 import io.kotlintest.specs.StringSpec

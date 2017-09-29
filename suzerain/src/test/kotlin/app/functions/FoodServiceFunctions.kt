@@ -1,6 +1,6 @@
 package app.functions
 
-import com.raken.test.api.TestBase
+import app.TestBase
 import io.restassured.RestAssured
 import io.restassured.builder.RequestSpecBuilder
 

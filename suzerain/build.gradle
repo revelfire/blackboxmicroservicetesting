@@ -19,7 +19,7 @@ apply plugin: 'idea'
 apply plugin: 'maven'
 apply plugin: 'kotlin'
 
-group 'com.raken.test.api'
+group 'com.revelfire.test.api'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

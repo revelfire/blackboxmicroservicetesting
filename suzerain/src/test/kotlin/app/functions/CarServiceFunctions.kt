@@ -1,8 +1,8 @@
 package app.functions
 
 import app.CarState
-import com.raken.test.api.TestBase
-import com.raken.test.api.util.objectMapperFactory
+import app.TestBase
+import app.util.objectMapperFactory
 import io.restassured.RestAssured
 import io.restassured.builder.RequestSpecBuilder
 import io.restassured.path.json.JsonPath

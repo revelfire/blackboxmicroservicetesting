@@ -1,8 +1,8 @@
 package app.journeys
 
+import app.Journey
 import app.functions.FoodServiceFunctions
-import com.raken.test.api.Journey
-import com.raken.test.api.util.objectMapperFactory
+import app.util.objectMapperFactory
 import io.kotlintest.matchers.lt
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.matchers.shouldNotBe
