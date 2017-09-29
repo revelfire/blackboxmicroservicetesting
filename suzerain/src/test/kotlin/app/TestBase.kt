@@ -1,6 +1,6 @@
-package com.raken.test.api
+package app
 
-import com.raken.test.api.util.objectMapperFactory
+import app.util.objectMapperFactory
 import io.kotlintest.ProjectConfig
 import io.kotlintest.Tag
 import io.restassured.RestAssured

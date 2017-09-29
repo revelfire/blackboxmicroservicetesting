@@ -1,9 +1,9 @@
 package app.tests
 
+import app.Integration
 import app.functions.CarServiceFunctions.isCarReady
 import app.functions.CarServiceFunctions.getCars
 import app.functions.CarServiceFunctions.putCar
-import com.raken.test.api.Integration
 import io.kotlintest.matchers.gt
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.matchers.shouldNotBe

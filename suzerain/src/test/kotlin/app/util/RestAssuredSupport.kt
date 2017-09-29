@@ -1,4 +1,4 @@
-package com.raken.test.api.util
+package app.util
 
 /**
  * Created by cmathias on 5/2/17.
